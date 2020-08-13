@@ -10,7 +10,8 @@ typedef struct
     uint8_t prefix[4];
     uint32_t version;
     uint32_t size;
-    uint8_t signature[64]
+    uint8_t reserved[4];
+    uint8_t signature[128];
 } boot_image_metadata_t;
 
 typedef struct
